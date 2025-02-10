@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import { RenderCustom } from './router';
+
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <h1>HEllO</h1>
+  <BrowserRouter>
+    <RenderCustom />
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
